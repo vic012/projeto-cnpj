@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Busca CNPJ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style_index.css' %}">
+</head>
+<body>
+	<header>
+		<div>
+			<img src="{% static 'img/cnpj.png'%}">
+		</div>
+		<div>
+			<h1 class="index"> Consulte o seu CNPJ </h1>
+		</div>
+	</header>
+	<form action="/dados-recebidos" method="get">
+		<!--Necessário para o métod POST-->
+		<!--{% csrf_token %}-->
+		<input class="cnpj" type="text" name="cnpj" placeholder="14 Dígitos sem . / ou - ">
+		<input class="botao" type="submit" value="Buscar">
+	</form>
+	<p style="color:white;text-align:center;background-color:#87CEFA"> {{resultado.nome}} </p>
+</body>
+</html>

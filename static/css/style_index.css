@@ -1,0 +1,64 @@
+header {
+	text-align: center;
+	background: #87CEFA;
+	color: white;
+	font-size: 30px;
+}
+
+form {
+	padding-top: 15px;
+	text-align: center;
+}
+
+.index {
+	color: white;
+	text-align: center;
+}
+
+div {
+	display: inline-block;
+}
+
+img {
+	width: 150px;
+}
+
+.cnpj {
+	border: none;
+	border-bottom: 2px solid #87CEFA;
+	/*width: 100%;*/
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+.cnpj:focus {
+	border-radius: 4px;
+  	background-color: lightblue;
+}
+
+.botao {
+	background-color: #1f6f9d;
+	color: white;
+	border: none;
+	/*width: 100%;*/
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
